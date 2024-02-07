@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="form" action="#">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" id="username">
+            <input type="password" placeholder="Password" id="password">
+            <button class="submit-button" value="Submit" onclick="register()">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        username = document.getElementById("username");
+        password = document.getElementById("password");
+
+        const register = () => {
+            const uName = username.value;
+            let pass = password.value;
+            
+            console.log(uName, pass);
+        }
+    </script>
+</body>
+
+</html>
